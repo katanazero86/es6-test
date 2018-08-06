@@ -86,7 +86,7 @@ rollup-plugin-typescript2
 rollup-plugin-tslint
 rollup-plugin-babel
 등
- 
+
 플러그인을 통해서, 번들링을 할 때 코드 컴파일, JSON 파일 작업 등 다양한 작업을 할 수 있다.
 
 import typescript from 'rollup-plugin-typescript2';
