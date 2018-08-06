@@ -1,4 +1,7 @@
 const readline = require('readline');
+import promiseExampleModule from './promise_example/promise_example.js';
+
+promiseExampleModule();
 
 const readlineInterfaceModule = (() => {
     return {
