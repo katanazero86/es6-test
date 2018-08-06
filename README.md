@@ -30,7 +30,7 @@ rollup.js 는 https://rollupjs.org 에서 참고하셔서 진행
 ### Code Review
 
 ```
-1. npm을 이용하여 구성하라고 했기에, node.js readline 모듈을 이용
+- npm을 이용하여 구성하라고 했기에, node.js readline 모듈을 이용
 
 readline 모듈은 Node.js에서 콘솔로 입력을 받게 해주는 모듈입니다.(마치, C언어 같은)
 사용법은 
@@ -49,25 +49,25 @@ prompt는 입력을 받고,
 on은 특정 이벤트에 대한 처리를 합니다.(line이라는 이벤트가 입력받은 값과 같이 콜백함수를 작동시킵니다. )
 
 
-2. 화살표 함수 문법과 Modul 패턴을 이용하여 코드를 작성
+- 화살표 함수 문법과 Modul 패턴을 이용하여 코드를 작성
 코드를 모듈화 하여, 느슨한 결합 및 의존성 감소
 화살표 함수는 ES6 문법을 요구해서 작성(화살표 함수는 항상 익명이며, this 바인딩이 되지 않는다)
 JS에서 함수를 정의하는 방식은 함수 선언식 / 익명함수 표현식 / 기명함수 표현식 이 존재
 
-3. 1+3+2 / 2+2 와 같이 문자열 형태로 입력 받기 때문에, eval() 를 이용
+- 1+3+2 / 2+2 와 같이 문자열 형태로 입력 받기 때문에, eval() 를 이용
 eval(): 자바스크립트 표현식으로 문자열을 자바스크립트 코드로 해석한 후 이를 평가 / 문자열을 JS 코드로 해석하여 실행
 
-4. npm 프로젝트 구성을 위해, npm init 명령어로 프로젝트 구성
+- npm 프로젝트 구성을 위해, npm init 명령어로 프로젝트 구성
 npm init
 
-5. rollup.js 로 번들링을 하고 싶어하니, dependencies 에 추가해주자
+- rollup.js 로 번들링을 하고 싶어하니, dependencies 에 추가해주자
 npm i rollup
 
 "dependencies": {
     "rollup": "^0.63.5"
   }
 
-6. rollup.cofig.js 파일을 작성한다.
+- rollup.cofig.js 파일을 작성한다.
 CommonJS 스펙을 준수한 모듈로 번들링하는 경우 -> format: 'cjs'
 ES Module 스펙 -> format: 'es'
 브라우저 전용으로 모듈 스펙 -> format: 'iife'
@@ -105,8 +105,7 @@ export default {
 
 플러그인을 사용하고 싶다면, npm i 명령어를 통해, 해당 모듈을 의존성에 추가하고 설정파일에서 config에 import 하여 사용.
 
-7. package.json scripts 에 rollup -c 를 이용하여, 번들링하자.
-
+- package.json scripts 에 rollup -c 를 이용하여, 번들링하자.
 
 npm run build
 npm run start
