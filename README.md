@@ -27,7 +27,7 @@ rollup.js 는 https://rollupjs.org 에서 참고하셔서 진행
 
 
 
-### Code Review
+### Project Code Review
 
 ```
 - npm을 이용하여 구성하라고 했기에, node.js readline 모듈을 이용
@@ -86,7 +86,7 @@ rollup-plugin-typescript2
 rollup-plugin-tslint
 rollup-plugin-babel
 등
- 
+
 플러그인을 통해서, 번들링을 할 때 코드 컴파일, JSON 파일 작업 등 다양한 작업을 할 수 있다.
 
 import typescript from 'rollup-plugin-typescript2';
