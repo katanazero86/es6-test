@@ -27,7 +27,7 @@ rollup.js 는 https://rollupjs.org 에서 참고하셔서 진행
 
 
 
-### Code Review
+### Project Code Review
 
 ```
 - npm을 이용하여 구성하라고 했기에, node.js readline 모듈을 이용
