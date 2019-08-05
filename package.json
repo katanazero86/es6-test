@@ -1,21 +1,17 @@
 {
-  "name": "es6-cal-project",
+  "name": "es6-test",
   "version": "1.0.0",
-  "description": "```\r 더하기 빼기를 할 수 있는 계산기를 만들어주세요.\r (곱셈, 나눗셈은 안하셔도 됩니다.)\r 1. 사용자에게 입력을 받아야 하며, 입력은 문자열로 받아야 합니다. (숫자 및 +, - 기호 포함) \r 2. es6 문법을 사용하여 작성 (npm 사용해서 프로젝트 구성)\r 3. 본인이 할 수 있는 가장 우아하고 고급스러운 코딩을 부탁드립니다. \r (각종 디자인 패턴/ 유지보수를 고려한 코딩/ 각종 라이브러리 사용 가능합니다.)\r 예) \r 입력 : 1 - 2 + 3 \r 출력 : 2 \r ```",
+  "description": "es6 test 과제 코드",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "rollup -c",
-    "start": "node ./build/js/main.min.js"
+    "start": "node ./build/js/main.min.js",
+    "build run" : "npm run build && npm run start"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://phpbae@bitbucket.org/phpbae/es6-cal-project.git"
-  },
-  "author": "phpbae",
+  "author": "kyle",
   "license": "ISC",
-  "homepage": "https://bitbucket.org/phpbae/es6-cal-project#readme",
   "dependencies": {
-    "rollup": "^0.63.5"
+    "rollup": "^0.68.2"
   }
 }

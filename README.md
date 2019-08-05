@@ -1,4 +1,4 @@
-# es6-cal-project
+# es6-test
 
 ## 모 회사 코딩 테스트(프론트 개발자 주니어 직군)
 
@@ -16,6 +16,9 @@
 출력 : 2 
 ```
 
+- readline 모듈 이용.
+- module 패턴 적용.
+
 ### 요구사항 2
 
 ```
@@ -25,6 +28,9 @@
 rollup.js 는 https://rollupjs.org 에서 참고하셔서 진행
 ```
 
+- rollup 모듈 추가
+- rollup.config.js 작성
+- rollup -c 명령어 사용
 
 
 ### Project Code Review
@@ -109,4 +115,21 @@ export default {
 
 npm run build
 npm run start
+```
+
+### 요구사항 3
+
+```
+- promise_example.js 작성
+다음 주어진, 코드를 이용하요 numbers 배열의 모든 합을 계산하시오.
+
+const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+let sumResult2 = 0;
+
+    function addNumber(a, b) {
+        return new Promise((resolve => {
+            resolve(a + b);
+        }));
+    }
+
 ```

@@ -1,7 +1,7 @@
 const readline = require('readline');
 import promiseExampleModule from './promise_example/promise_example.js';
 
-promiseExampleModule();
+// promiseExampleModule();
 
 const readlineInterfaceModule = (() => {
     return {
@@ -45,7 +45,7 @@ const calculatorModule = (() => {
 })();
 
 let readlineInterface = readlineInterfaceModule.init();
-readlineInterface.setPrompt('계산하실 값을 입력하세요.(예: 1+2*3  결과: 7) > ');
+readlineInterface.setPrompt('계산하실 값을 입력하세요.(예: 1+(2*3)  결과: 7) > ');
 readlineInterface.prompt();
 readlineInterface.on('line', (line) => {
     if (line === 'exit') {
